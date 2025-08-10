@@ -89,9 +89,10 @@ line-height: 24.3px;
 
 }
 
-.slot_1 {
+.slot_1 h1 {
 
 }
+
 
 .h_slot {
   position: absolute;
@@ -177,7 +178,8 @@ color: aliceblue;
 }
 
 .lots {
-  border: 5px solid black;
+  width: 1100px;
+  height: 750px;
 }
 .slots {
   display: flex;
@@ -202,6 +204,25 @@ color: aliceblue;
   margin-top: 20px;
 }
 
+.slot_1 h1 {
+  position:relative;
+  top: 48px;
+  left: 40px;
+  color: aliceblue;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.slot_1 p {
+  position: relative;
+  top: 404px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  color: aliceblue;
+  line-height: 120%;
+  /*font-size: 20px;*/  /* при увелечении размера margin-bottom перестает работать*/
+}
+
 .slot_2 {
   background-image: url("/images/card-lot-02.jpg"); /* путь к файлу */
   background-size: cover;                 /* растянуть на весь контейнер */
@@ -212,6 +233,26 @@ color: aliceblue;
   margin-top: 20px;
 }
 
+.slot_2 h1 {
+  position:relative;
+  top: 48px;
+  left: 40px;
+  color: aliceblue;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.slot_2 p {
+  position: relative;
+  top: 188px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  color: aliceblue;
+  line-height: 120%;
+  /*font-size: 20px;*/  /* при увелечении размера margin-bottom перестает работать*/
+}
+
 .slot_3{ 
   background-image: url("/images/card-lot-03.jpg"); /* путь к файлу */
   background-size: cover;                 /* растянуть на весь контейнер */
@@ -220,6 +261,34 @@ color: aliceblue;
   width: 334px;
   height: 596px;  
   margin-top: 20px;  
+}
+
+.slot_3 h1 {
+  position:relative;
+  top: 48px;
+  left: 40px;
+  color: aliceblue;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.slot_3 p {
+  position: relative;
+  top: 284px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  color: aliceblue;
+  line-height: 120%;
+  /*font-size: 20px;*/  /* при увелечении размера margin-bottom перестает работать*/
+}
+
+.more {
+  position: relative;
+  top: 720px;
+  left: 40px;
+  font-size: 20px;
+  line-height: 100%;
 }
 
 .about {
