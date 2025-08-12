@@ -1,69 +1,61 @@
-header {
-  display: flex;         /* включаем flex */
-  width: 1100px;           /* ширина во всю страницу */
+.header {
+  display: flex;         
+  width: 1100px;          
   height: 293px; 
-  justify-content:space-between;
+  padding: 0 50px;
   align-items: center;
 }
 
-.nav_header {
+.header_nav {
   display: flex;
+  margin-right: 36px;
 }
 
-.nav_header ul {
-  display: flex;       /* делаем список горизонтальным */
+.nav_list {
+  display: flex;
   list-style-type: circle;
-  padding: 0;          
+  padding: 0;
   margin: 0;
-  gap: 20px;           /* расстояние между элементами */
-  width: 149px;        /* фиксированная ширина */
-  height: 21px;  
-  font-family: Raleway;
+  gap: 35px;
+  font-family: 'Raleway';
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
-  white-space: nowrap;
-  margin-left: 40px;
+  line-height: 100%;
+
 }
 
-.li_1 {
-  margin-left: 15px;
+.nav_item:first-child {
+  list-style-type: none;
 }
 
-.li_2 {
-  margin-left: 15px;
-}
-
-.master {
-  list-style: none2;
-}
-
-.a_header {
-position: relative;
+.header_logo {
 width: 148px;
 height: 105px;
-top: 7px;
-left: -15px;
 justify-self: center;
 align-items: center;
 }
 
-.part ul {
+.header_contacts ul {
   list-style: none;
 }
 
-.part li {
+.header_logo li {
 
 }
 
-.part {
-font-style: normal;
-position: relative;
-top: 7px;
-left: -100px;
-line-height: 24.3px;
+.header_contacts {
+  margin-left: auto;
+  line-height: 24.3px;
+  ssfont-style: normal;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
 }
 
+
+
+
+/* Cover */
 
 .cover {  
   position: relative;
@@ -75,33 +67,20 @@ line-height: 24.3px;
   height: 757px;                          /* высота экрана */
   color: white;                           /* цвет текста для контраста */
   display: flex;                          /* для выравнивания текста */
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 180px;
+  }
+
+  .cover_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(50%);
   }
 
 .step {
   display: flex;
 }
 
-.lots {
-  position: relative;
-
-}
-
-.slot_1 h1 {
-
-}
-
-
-.h_slot {
-  position: absolute;
-  left: 40px;
-  width: 121px;
-  height: 47px;
-  font-size: 40px;
-  line-height: 100%;
-}
 .s_1 {
 position: absolute;
 top: 165px;
@@ -147,159 +126,145 @@ text-transform: uppercase;
 letter-spacing: 30px;
 }
 
-.description p{
+.description {
+  z-index: 2;
+  display: flex;
+  margin-top: auto;
+  padding: 0 50px 60px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
-display: flex;
-position: absolute;
-width: 637px;
-height: 28px;
-top: 668px;
-left: 50px;
-font-weight: 400;
-font-size: 22px;
-line-height: 28px;
-letter-spacing: 0%;
-text-transform: uppercase;
-word-spacing: 18px;
+.description p{
+  word-spacing: 18px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+ 
+.description h1 {
+  word-spacing: 18px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .description button {
-display: flex;
-position:absolute;
-justify-content: center;
-align-items: center;
-width: 256px;
-height: 51px;
-top: 656px;
-left: 794px;
-background-color: transparent;
-color: aliceblue;
- border: 2px solid white
+  width: 256px;
+  height: 51px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 1px solid white;
 }
 
+
+
+/*  Lots  */
+
 .lots {
+  position: relative;
   width: 1100px;
   height: 750px;
+
 }
+
+.h_slot {
+  width: 121px;
+  height: 47px;
+  font-size: 40px;
+  line-height: 100%;
+}
+
 .slots {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 723px;
-  top: 1230px;
-  left: 24px;
-  angle: 0 deg;
-  opacity: 1;
+  margin-top: 20px;
+}
 
+.slot {
+position: relative;
+padding: 48px 40px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 334px;
+height: 596px;
 }
 
 .slot_1 {
-  background-image: url("/images/card-lot-01.jpg"); /* путь к файлу */
-  background-size: cover;                 /* растянуть на весь контейнер */
-  background-position: center;            /* выровнять по центру */
-  background-repeat: no-repeat;
-  width: 334px;
-  height: 596px;  
-  margin-top: 20px;
-}
-
-.slot_1 h1 {
-  position:relative;
-  top: 48px;
-  left: 40px;
-  color: aliceblue;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-.slot_1 p {
-  position: relative;
-  top: 404px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 50px;
-  color: aliceblue;
-  line-height: 120%;
-  /*font-size: 20px;*/  /* при увелечении размера margin-bottom перестает работать*/
+  background-image: url(/images/card-lot-01.jpg);
 }
 
 .slot_2 {
-  background-image: url("/images/card-lot-02.jpg"); /* путь к файлу */
-  background-size: cover;                 /* растянуть на весь контейнер */
-  background-position: center;            /* выровнять по центру */
-  background-repeat: no-repeat;  
-  width: 334px;
-  height: 596px;  
-  margin-top: 20px;
+  background-image: url(/images/card-lot-02.jpg);
 }
 
-.slot_2 h1 {
-  position:relative;
-  top: 48px;
-  left: 40px;
-  color: aliceblue;
-  text-decoration: underline;
-  text-transform: uppercase;
+.slot_3 {
+   background-image: url(/images/card-lot-03.jpg);
+
 }
 
-.slot_2 p {
-  position: relative;
-  top: 188px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 50px;
+.slot__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(50%);
+}
+
+.slot h1 {
+  z-index: 2;
   color: aliceblue;
+  font-family: 'Raleway';
+  font-size: 22px;
   line-height: 120%;
-  /*font-size: 20px;*/  /* при увелечении размера margin-bottom перестает работать*/
-}
-
-.slot_3{ 
-  background-image: url("/images/card-lot-03.jpg"); /* путь к файлу */
-  background-size: cover;                 /* растянуть на весь контейнер */
-  background-position: center;            /* выровнять по центру */
-  background-repeat: no-repeat;
-  width: 334px;
-  height: 596px;  
-  margin-top: 20px;  
-}
-
-.slot_3 h1 {
-  position:relative;
-  top: 48px;
-  left: 40px;
-  color: aliceblue;
-  text-decoration: underline;
   text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  font-weight: bold;
+
 }
 
-.slot_3 p {
-  position: relative;
-  top: 284px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 50px;
+.slot p {
+   z-index: 2;
   color: aliceblue;
+  font-family: "Raleway";
   line-height: 120%;
-  /*font-size: 20px;*/  /* при увелечении размера margin-bottom перестает работать*/
+  font-weight: 400;
+  font-size: 20px;
+
 }
 
 .more {
-  position: relative;
-  top: 720px;
+  position: absolute;
+  top: 700px;
   left: 40px;
   font-size: 20px;
   line-height: 100%;
 }
 
+
+
+/* About */
+
 .about {
   position: relative;
   width: 1100px;
   height: 595px;
-  margin-top: 30px;
+  margin-top: 120px;
+  margin-bottom: 180px;
 
 }
  
-/* Контейнер логотипа */
 .about_logo {
     position: relative;                 /* нужно для позиционирования ::before */
     width: 240px;                        /* размер контейнера */
@@ -310,7 +275,6 @@ color: aliceblue;
     left: 47px;
 }
 
-/* Чёрный круг позади лого */
 .about_logo::before {
     content: "";
     position: absolute;
@@ -329,65 +293,67 @@ color: aliceblue;
 }
 
 .title {
-  margin: 0 0 15px 0; /* нижний отступ 15px — это расстояние до текста */
-  font-size: 40px;
   margin-bottom: 100px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
 }
 
-.text_1 {
-  margin: 0 0 15px 0;
-  font-size: 22px;
-
-}
-
-.text_2 {
-  margin: 0px;
+.text {
+  font-family: 'Raleway';
+  font-weight: 400;
   font-size: 20px;
+  line-height: 24px;
+} 
+
+.margin_p {
+margin-bottom: 24px;
 }
+
+
+/* footer */
 
 footer {
   position: relative;
   display: flex;
-  margin-top: 30px;
   width: 1100px;
   height: 180px;
-  justify-content:start;
-  margin-top: 50px;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
 .data_contacts {
-position: absolute;
-width: 264.573486328125px;
-height: 98px;
-angle: 0 deg;
-opacity: 1;
-left: 50px;
-border-width: 1px;
-font-style: normal;
+  width: 265px;
+  height: 98px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
 
 }
 
 .data_page {
-  position: absolute;
   width: 164px;
-height: 64px;
-opacity: 1;
-top: 1px;
-left: 468.6px;
-border-width: 1px;
-text-align: center;
-
+  height: 64px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
 }
 
 .data_media {
-  position: absolute;
   display: flex;
   width: 240px;
   height: 48px;
   opacity: 1;
-  top: 1px;
-  left: 810px;
   gap: 48px;
 
 
+}
+
+.media {
+  width: 48px;
+height: 48px;
 }
