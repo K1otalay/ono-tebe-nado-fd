@@ -39,10 +39,6 @@ align-items: center;
   list-style: none;
 }
 
-.header_logo li {
-
-}
-
 .header_contacts {
   margin-left: auto;
   line-height: 24.3px;
@@ -68,62 +64,55 @@ align-items: center;
   color: white;                           /* цвет текста для контраста */
   display: flex;                          /* для выравнивания текста */
   margin-bottom: 180px;
-  }
+}
 
   .cover_overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     backdrop-filter: brightness(50%);
-  }
+}
 
 .step {
   display: flex;
 }
 
 .s_1 {
-position: absolute;
-top: 165px;
-left: 50px;
-font-family: Raleway;
-font-weight: 700;
-font-style: Bold;
-font-size: 100px;
-line-height: 114.99999999999999%;
-letter-spacing: 30%;
-text-transform: uppercase;
-letter-spacing: 30px;
-
+  position: absolute;
+  top: 165px;
+  left: 50px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  text-transform: uppercase;
+  letter-spacing: 30px;
 }
 
 .s_2 {
-position: absolute;
-top: 300px;
-left: 380px;
-font-family: Raleway;
-font-weight: 700;
-font-style: Bold;
-font-size: 100px;
-line-height: 114.99999999999999%;
-letter-spacing: 30%;
-text-align: center;
-text-transform: uppercase;
-letter-spacing: 30px;
-
+  position: absolute;
+  top: 300px;
+  left: 380px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 30px;
 }
 
 .s_3 {
-position: absolute;
-top: 435px;
-left: 663px;
-font-weight: 700;
-font-style: Bold;
-font-size: 100px;
-line-height: 114.99999999999999%;
-letter-spacing: 30%;
-text-align: right;
-text-transform: uppercase;
-letter-spacing: 30px;
+  position: absolute;
+  top: 435px;
+  left: 663px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 30px;
 }
 
 .description {
@@ -136,7 +125,7 @@ letter-spacing: 30px;
   width: 100%;
 }
 
-.description p{
+.description p {
   word-spacing: 18px;
   font-family: 'Raleway';
   font-weight: 400;
@@ -166,8 +155,9 @@ letter-spacing: 30px;
 
 .lots {
   position: relative;
-  width: 1100px;
-  height: 750px;
+  width: 1052px;
+  height: 723px;
+  margin: 0 24px;
 
 }
 
@@ -176,6 +166,7 @@ letter-spacing: 30px;
   height: 47px;
   font-size: 40px;
   line-height: 100%;
+  margin-left: 40px;
 }
 
 .slots {
@@ -187,16 +178,16 @@ letter-spacing: 30px;
 }
 
 .slot {
-position: relative;
-padding: 48px 40px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-width: 334px;
-height: 596px;
+  position: relative;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 334px;
+  height: 596px;
 }
 
 .slot_1 {
@@ -209,7 +200,6 @@ height: 596px;
 
 .slot_3 {
    background-image: url(/images/card-lot-03.jpg);
-
 }
 
 .slot__overlay {
@@ -231,7 +221,6 @@ height: 596px;
   text-decoration: underline;
   text-decoration-style: solid;
   font-weight: bold;
-
 }
 
 .slot p {
@@ -241,7 +230,6 @@ height: 596px;
   line-height: 120%;
   font-weight: 400;
   font-size: 20px;
-
 }
 
 .more {
@@ -260,33 +248,32 @@ height: 596px;
   position: relative;
   width: 1100px;
   height: 595px;
-  margin-top: 120px;
-  margin-bottom: 180px;
+  margin: 120px 24px 180px 24px;
 
 }
  
 .about_logo {
-    position: relative;                 /* нужно для позиционирования ::before */
-    width: 240px;                        /* размер контейнера */
-    height: 240px;
-    background: url('/images/logo-white.svg')    /* путь к твоему лого */
-                center/60% no-repeat;    /* центрируем и уменьшаем лого */
-    top: 35px;
-    left: 47px;
+  position: relative;                 /* нужно для позиционирования ::before */
+  width: 240px;                        /* размер контейнера */
+  height: 240px;
+  background: url('/images/logo-white.svg')    /* путь к твоему лого */
+              center/60% no-repeat;    /* центрируем и уменьшаем лого */
+  top: 35px;
+  left: 47px;
 }
 
 .about_logo::before {
-    content: "";
-    position: absolute;
-    inset: 0;                            /* растягиваем по размеру родителя */
-    background: black;                   /* чёрный фон */
-    border-radius: 50%;                  /* делаем круг */
-    z-index: -1;                          /* отправляем за лого */
+  content: "";
+  position: absolute;
+  inset: 0;                            /* растягиваем по размеру родителя */
+  background: black;                   /* чёрный фон */
+  border-radius: 50%;                  /* делаем круг */
+  z-index: -1;                          /* отправляем за лого */
 }
 
 .about_text {
   position: absolute;
-  width: 750px;
+  width: 690px;
   height: 449px;
   top: 133px;   /* отступ от правого края */   
   left: 359px;  /* отступ от нижнего края */
@@ -308,7 +295,7 @@ height: 596px;
 } 
 
 .margin_p {
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 
@@ -349,11 +336,9 @@ footer {
   height: 48px;
   opacity: 1;
   gap: 48px;
-
-
 }
 
 .media {
   width: 48px;
-height: 48px;
+  height: 48px;
 }
