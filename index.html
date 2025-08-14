@@ -15,7 +15,7 @@
       <nav class="header_nav">
         <ul class="nav_list">
           <li class="nav_item">
-            главная
+            <a href="#">главная</a>
           </li>
 
           <li class="nav_item">
@@ -32,7 +32,7 @@
         <img src="images/logo-black.svg" alt="Логотип сайта">
       </a>
 
-      <address class="header_contacts">
+      <address class="address">
         <ul>
           <li>
             <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -50,13 +50,16 @@
     <main class="main">
       
       <section class="cover">
-        <div class="cover_overlay"></div>
+        <div class="overlay"></div>
         
-        <div class="step">
-          <h1 class="s_1">ОНО</h1>
-          <h1 class="s_2">ТЕБЕ</h1>
-          <h1 class="s_3">НАДО</h1>
-        </div>
+          <h1 class="steps">
+
+          <span class="step_text step_start">ОНО</span>
+          <span class="step_text step_center">ТЕБЕ</span>
+          <span class="step_text step_end">НАДО</span>
+          
+        </h1>
+
         <div class="description">
           <p>АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
           <button>
@@ -65,36 +68,36 @@
         </div>
       </section>
       <section class="lots">
-        <h1 class="h_slot">ЛОТЫ</h1>
+        <h2 class="h_slot">ЛОТЫ</h2>
 
         <div class="slots">
-          <div class="slot slot_1">
-            <div class="slot__overlay"></div>
-            <h1>Фильм режиссёра, который бросил киношколу</h1>
+          <a href="#" class="slot slot_left">
+            <div class="overlay"></div>
+            <h3>Фильм режиссёра, который бросил киношколу</h3>
             <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-          </div>
+        </a>
 
-          <div class="slot slot_2">
-            <div class="slot__overlay"></div>
-            <h1 >Книга, где описан один скучный день из жизни рекламного агента</h1>
+          <a href="#" class="slot slot_center">
+            <div class="overlay"></div>
+            <h3>Книга, где описан один скучный день из жизни рекламного агента</h3>
             <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-          </div>
+          </a>
 
-          <div class="slot slot_3">
-            <div class="slot__overlay"></div>
-            <h1>Картина, которую повторит даже 5-летний сын маминой подруги</h1>
+          <a href="#" class="slot slot_right">
+            <div class="overlay"></div>
+            <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
             <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-          </div>  
-
-          <a href="#" class="more">посмотреть больше</a>
-          
+          </a>  
         </div>
+        <a href="#" class="more">посмотреть больше</a>
+          
+        
       </section>
       <section class="about">
         <div class="about_logo"></div>
         <div class="about_text">
-          <h1 class="title">ОБ АУКЦИОНЕ</h1>
-          <p class="text margin_p">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+          <h2 class="title">ОБ АУКЦИОНЕ</h2>
+          <p class="text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
           <p class="text"> Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
 на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>     
         </div>
@@ -109,16 +112,19 @@
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="data_page">
-        <p >главная</p>
-        <a href="#"><p>посмотреть лоты</p></a>
-        <a href="#"><p>об аукционе</p></a>
+          <a href="#" class="data_page_no_underline">главная</a>
+          <a href="#"><p>посмотреть лоты</p></a>
+          <a href="#"><p>об аукционе</p></a>
       </nav>
-      <aside class="data_media">
-        <div class="media"><img src="/images/yt.svg" alt=""></div>
-        <div class="media"><img src="/images/vk.svg" alt=""></div>
-        <div class="media"><img src="/images/pinterest.svg" alt=""></div>
-      </aside>
+      <nav class="data_media">
+        <ul>
+          <li class="media"><a href="#"><img src="/images/yt.svg" alt=""></a></li>
+          <li class="media"><a href="#"><img src="/images/vk.svg" alt=""></a></li>
+          <li class="media"><a href="#"><img src="/images/pinterest.svg" alt=""></a></li>
+        </ul>
+      </nav>
     </footer>
 
   </body>
 </html>
+

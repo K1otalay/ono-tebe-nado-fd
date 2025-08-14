@@ -1,9 +1,21 @@
+/* ===== Общие классы (переиспользуемые элементы) ===== */
+.overlay {                      
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*                конец                     */
+
 .header {
   display: flex;         
-  width: 1100px;          
-  height: 293px; 
+  width: 1100px;   
   padding: 0 50px;
   align-items: center;
+  margin: 92px 0 96px ;
 }
 
 .header_nav {
@@ -17,7 +29,7 @@
   padding: 0;
   margin: 0;
   gap: 35px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -26,6 +38,11 @@
 
 .nav_item:first-child {
   list-style-type: none;
+  text-decoration: none !important;
+}
+
+.nav_item:first-child a{
+  text-decoration: none;
 }
 
 .header_logo {
@@ -35,21 +52,18 @@ justify-self: center;
 align-items: center;
 }
 
-.header_contacts ul {
-  list-style: none;
-}
-
-.header_contacts {
+.address {
   margin-left: auto;
   line-height: 24.3px;
-  ssfont-style: normal;
-  font-family: 'Raleway';
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 
-
-
+.address ul {
+  list-style: none;
+}
 
 /* Cover */
 
@@ -60,59 +74,41 @@ align-items: center;
   background-position: center;            /* выровнять по центру */
   background-repeat: no-repeat;           /* не повторять */
   width: 1100px;
-  height: 757px;                          /* высота экрана */
+  min-height: 757px;                          /* высота экрана */
   color: white;                           /* цвет текста для контраста */
   display: flex;                          /* для выравнивания текста */
   margin-bottom: 180px;
+  flex-direction: column;
+}  
+
+.steps {
+ z-index: 2;
+ padding: 165px 20px 106px 50px;
 }
 
-  .cover_overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: brightness(50%);
-}
-
-.step {
-  display: flex;
-}
-
-.s_1 {
-  position: absolute;
-  top: 165px;
-  left: 50px;
-  font-family: 'Raleway';
+.step_text {
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 100px;
   line-height: 115%;
   text-transform: uppercase;
   letter-spacing: 30px;
+  ;
 }
 
-.s_2 {
-  position: absolute;
-  top: 300px;
-  left: 380px;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 115%;
+.step_start {
+  display: block;
+  text-align: left;
+}
+
+.step_center {
+  display: block;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 30px;
 }
 
-.s_3 {
-  position: absolute;
-  top: 435px;
-  left: 663px;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 115%;
+.step_end {
+  display: block;
   text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 30px;
 }
 
 .description {
@@ -123,11 +119,12 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-direction: row;
 }
 
 .description p {
   word-spacing: 18px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
@@ -135,7 +132,7 @@ align-items: center;
  
 .description h1 {
   word-spacing: 18px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
@@ -156,14 +153,13 @@ align-items: center;
 .lots {
   position: relative;
   width: 1052px;
-  height: 723px;
   margin: 0 24px;
 
 }
 
 .h_slot {
   width: 121px;
-  height: 47px;
+  padding-bottom: 27px;
   font-size: 40px;
   line-height: 100%;
   margin-left: 40px;
@@ -174,7 +170,7 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  margin: 20px 0 30px 0 ;
 }
 
 .slot {
@@ -187,34 +183,26 @@ align-items: center;
   background-position: center;
   background-repeat: no-repeat;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
+  text-decoration: none;
 }
 
-.slot_1 {
+.slot_left {
   background-image: url(/images/card-lot-01.jpg);
 }
 
-.slot_2 {
+.slot_center {
   background-image: url(/images/card-lot-02.jpg);
 }
 
-.slot_3 {
+.slot_right {
    background-image: url(/images/card-lot-03.jpg);
 }
 
-.slot__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: brightness(50%);
-}
-
-.slot h1 {
+.slot h3 {
   z-index: 2;
   color: aliceblue;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   line-height: 120%;
   text-transform: uppercase;
@@ -224,20 +212,18 @@ align-items: center;
 }
 
 .slot p {
-   z-index: 2;
+  z-index: 2;
   color: aliceblue;
-  font-family: "Raleway";
+  font-family: 'Raleway', sans-serif;
   line-height: 120%;
   font-weight: 400;
   font-size: 20px;
 }
 
 .more {
-  position: absolute;
-  top: 700px;
-  left: 40px;
   font-size: 20px;
   line-height: 100%;
+  padding-left: 40px;
 }
 
 
@@ -245,10 +231,9 @@ align-items: center;
 /* About */
 
 .about {
-  position: relative;
+  display: flex;
   width: 1050px;
-  height: 595px;
-  margin: 120px 24px 180px 24px;
+  margin: 120px auto 180px;
 }
  
 .about_logo {
@@ -257,8 +242,8 @@ align-items: center;
   height: 240px;
   background: url('/images/logo-white.svg')    /* путь к твоему лого */
               center/60% no-repeat;    /* центрируем и уменьшаем лого */
-  top: 35px;
-  left: 47px;
+  margin: 35px 0 0 47px;
+  flex-shrink: 0;
 }
 
 .about_logo::before {
@@ -271,30 +256,26 @@ align-items: center;
 }
 
 .about_text {
-  position: absolute;
-  width: 690px;
-  height: 449px;
-  top: 133px;   /* отступ от правого края */   
-  left: 359px;  /* отступ от нижнего края */
+  padding: 130px 0 0 120px;
 }
 
 .title {
   margin-bottom: 100px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
 }
 
 .text {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 } 
 
-.margin_p {
-  margin-bottom: 24px;
+.about_text p:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 
@@ -304,15 +285,13 @@ footer {
   position: relative;
   display: flex;
   width: 1100px;
-  height: 180px;
   justify-content: space-between;
   padding: 0 50px;
 }
 
 .data_contacts {
   width: 265px;
-  height: 98px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
@@ -321,20 +300,28 @@ footer {
 
 .data_page {
   width: 164px;
-  height: 64px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
   text-align: center;
 }
 
+.data_page_no_underline {
+text-decoration: none;
+}
+
 .data_media {
-  display: flex;
   width: 240px;
-  height: 48px;
   opacity: 1;
-  gap: 48px;
+}
+
+.data_media ul {
+  margin: 0;           /* убираем отступы сверху/снизу */
+  padding: 0;          /* убираем отступы слева/справа */
+  list-style-type: none; /* убираем маркеры */
+  display: flex;       /* если нужен горизонтальный список */
+  gap: 48px;           /* расстояние между элементами */
 }
 
 .media {
