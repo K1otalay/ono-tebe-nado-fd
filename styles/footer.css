@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 205px;
+  padding: 0 50px;
+}
+
+.footer__address {
+  width: 265px;
+  font-family: Raleway;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 24.3px;
+letter-spacing: 0%;
+
+}
+
+.footer__menu {
+  font-family: Raleway;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+letter-spacing: 0%;
+text-align: center;
+padding: 0 23px 0 0 ;
+text-underline-offset: 3px;
+
+}
+
+.media__list {
+  width: 240px;
+}
+
+.media__list-item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.media {
+  width: 48px;
+  height: 48px;
+}
