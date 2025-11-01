@@ -1,6 +1,6 @@
 .cover {
     position: relative;
-  background-image: url("/images/cover.jpg"); /* путь к файлу */
+  background-image: url("../images/cover.jpg"); /* путь к файлу */
   background-size: cover;                 /* растянуть на весь контейнер */
   background-position: center;            /* выровнять по центру */
   background-repeat: no-repeat;           /* не повторять */
@@ -26,7 +26,7 @@
     position: relative;
     text-transform: uppercase;
     font-size: 100px;
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #ffffff;
     line-height: 135px;
     letter-spacing: 0.3em;
@@ -68,7 +68,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 22px;
-    letter-spacing: 90%;
+    /* letter-spacing: 90%; */
     word-spacing: 18px;
     color: #ffffff;
     z-index: 2;
@@ -100,13 +100,13 @@
 }
 
 .lots__heading {
-  font-family: Raleway;
+font-family: "Raleway", sans-serif;
 font-weight: 700;
-font-style: Bold;
+/* font-style: Bold; */
 font-size: 40px;
-leading-trim: NONE;
+/* leading-trim: NONE; */
 line-height: 100%;
-letter-spacing: 0%;
+/* letter-spacing: 0%; */
 text-transform: uppercase;
 padding: 0 0 30px 40px;
 
@@ -144,16 +144,16 @@ padding: 0 0 30px 40px;
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-    background-image: url(/images/card-lot-02.jpg);
+    background-image: url(../images/card-lot-02.jpg);
 
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .overlay__off {
@@ -162,17 +162,17 @@ padding: 0 0 30px 40px;
 }
 
 .card__title {
-font-family: Raleway;
+font-family: "Raleway", sans-serif;
 font-weight: 700;
-font-style: Bold;
+/* font-style: Bold; */
 font-size: 22px;
-leading-trim: NONE;
+/* leading-trim: NONE; */
 line-height: 120%;
-letter-spacing: 0%;
+/* letter-spacing: 0%; */
 text-transform: uppercase;
 text-decoration: underline;
 text-decoration-style: solid;
-text-decoration-offset: 0%;
+/* text-decoration-offset: 0%; */
 text-decoration-thickness: 0%;
 position: relative;
 z-index: 3;
@@ -181,13 +181,13 @@ color: #ffffff;
 }
 
 .card__text {
-  font-family: Raleway;
+    font-family: "Raleway", sans-serif;
 font-weight: 400;
-font-style: Regular;
+font-style: normal;
 font-size: 20px;
-leading-trim: NONE;
+/* leading-trim: NONE; */
 line-height: 120%;
-letter-spacing: 0%;
+/* letter-spacing: 0%; */
 position: relative;
 z-index: 3;
 color: #ffffff;
@@ -196,13 +196,13 @@ color: #ffffff;
 
 .lots__look-more-link {
   padding: 33px 0 0 41px;
-  font-family: Raleway;
+    font-family: "Raleway", sans-serif;
 font-weight: 400;
-font-style: Regular;
+font-style: normal;
 font-size: 20px;
-leading-trim: NONE;
+/* leading-trim: NONE; */
 line-height: 100%;
-letter-spacing: 0%;
+/* letter-spacing: 0%; */
 text-underline-offset: 3px;
 
 }
@@ -236,13 +236,13 @@ text-underline-offset: 3px;
 }
 
 .about__title {
-  font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
 font-weight: 700;
-font-style: Bold;
+/* font-style: Bold; */
 font-size: 40px;
-leading-trim: NONE;
+/* leading-trim: NONE; */
 line-height: 100%;
-letter-spacing: 0%;
+/* letter-spacing: 0%; */
 text-transform: uppercase;
 padding: 150px 0px 100px 49px;
 
@@ -256,11 +256,11 @@ padding: 150px 0px 100px 49px;
 }
 
 .about__text {
-  font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
 font-weight: 400;
-font-style: Regular;
+/* font-style: Regular; */
 font-size: 20px;
-leading-trim: NONE;
+/* leading-trim: NONE; */
 line-height: 24px;
 letter-spacing: 0%;
 gap: 25px;

@@ -2,30 +2,21 @@
   display: flex;
   justify-content: space-between;
   margin-top: 205px;
+  margin-bottom: 82px;
   padding: 0 50px;
 }
 
-.footer__address {
-  width: 265px;
-  font-family: Raleway;
-font-weight: 400;
-font-style: Regular;
-font-size: 18px;
-leading-trim: NONE;
-line-height: 24.3px;
-letter-spacing: 0%;
-
-}
-
 .footer__menu {
+  display: flex;
+  flex-direction: column;
   font-family: Raleway;
 font-weight: 400;
-font-style: Regular;
+/* font-style: Regular; */
 font-size: 18px;
-leading-trim: NONE;
-letter-spacing: 0%;
+/* leading-trim: NONE; */
+/* letter-spacing: 0%; */
 text-align: center;
-padding: 0 23px 0 0 ;
+/* padding: 0 23px 0 0 ; */
 text-underline-offset: 3px;
 
 }
