@@ -9,17 +9,17 @@
 .footer__menu {
   display: flex;
   flex-direction: column;
-  font-family: Raleway;
-font-weight: 400;
-/* font-style: Regular; */
-font-size: 18px;
-/* leading-trim: NONE; */
-/* letter-spacing: 0%; */
-text-align: center;
-/* padding: 0 23px 0 0 ; */
-text-underline-offset: 3px;
-
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-underline-offset: 3px;
 }
+
+.footer__menu a:nth-child(1) {
+  text-decoration: none;
+}
+
 
 .media__list {
   width: 240px;
